@@ -27,7 +27,7 @@ ENDPOINT=https://your-api-endpoint.com
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/pedropberger/FASTAPI-GPT-Integration.git
    cd your-repo
    ```
 
