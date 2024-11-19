@@ -62,7 +62,7 @@ ENDPOINT=https://your-api-endpoint.com
 
 2. **Run the container**:
    ```bash
-   docker run -p 8000:8000 --env-file .env -v $(pwd)/data:/app/data fastapi-app
+   docker run -p 8000:8000 --env-file .env -v $(pwd)/data:/app/data --name api-gpt fastapi-gpt-app
    ```
 
 3. The API will be available at [http://localhost:8000](http://localhost:8000).
