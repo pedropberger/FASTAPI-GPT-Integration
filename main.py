@@ -19,7 +19,7 @@ if not API_KEY or not ENDPOINT:
 app = FastAPI()
 
 # Database setup
-DB_NAME = "responses.db"
+DB_NAME = "/app/data/responses.db"
 
 def init_db():
     with sqlite3.connect(DB_NAME) as conn:
