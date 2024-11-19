@@ -1,0 +1,6 @@
+fastapi
+pydantic
+datetime
+sqlite3
+requests
+python-dotenv
