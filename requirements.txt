@@ -1,6 +1,6 @@
 fastapi
 pydantic
+uvicorn
 datetime
-sqlite3
 requests
 python-dotenv
