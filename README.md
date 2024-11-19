@@ -62,7 +62,7 @@ ENDPOINT=https://your-api-endpoint.com
 
 2. **Run the container**:
    ```bash
-   docker run -p 8000:8000 --env-file .env fastapi-gpt-app
+   docker run -p 8000:8000 --env-file .env -v $(pwd)/data:/app/data fastapi-app
    ```
 
 3. The API will be available at [http://localhost:8000](http://localhost:8000).
@@ -77,6 +77,7 @@ ENDPOINT=https://your-api-endpoint.com
 ├── main.py              # Main FastAPI application code
 ├── requirements.txt     # Project dependencies
 ├── .env                 # Environment variables (do not commit this file!)
+├── data/
 └── README.md            # Project documentation
 ```
 
