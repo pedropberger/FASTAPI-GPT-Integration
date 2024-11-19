@@ -149,6 +149,48 @@ The database is automatically initialized on the first run.
 }
 ```
 
+### Python request exemple:
+
+```python
+import requests
+
+url = "http://127.0.0.1:8000/process-payload/"
+headers = {"Content-Type": "application/json"}
+
+payload = {
+    "messages": [
+        {
+            "role": "system",
+            "content": [
+                {
+                    "type": "text",
+                    "text": "You are an AI assistant helping people find information."
+                }
+            ]
+        },
+        {
+            "role": "user",
+            "content": [
+                {
+                    "type": "text",
+                    "text": "Generate an example text block for a prompt."
+                }
+            ]
+        }
+    ],
+    "temperature": 0.7,
+    "top_p": 0.95,
+    "max_tokens": 800
+}
+
+try:
+    response = requests.post(url, json=payload, headers=headers)
+    response.raise_for_status()
+    print("Content:", response.json()["content"])
+except requests.exceptions.RequestException as e:
+    print(f"Error: {e}")
+```
+
 ---
 
 ## ⚠️ Important Notes
