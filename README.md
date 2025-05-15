@@ -1,4 +1,4 @@
-# FastAPI GPT Integration
+# FastAPI GPT Integration (maybe deprecated)
 
 This project is a Python API built with FastAPI that integrates with a language model to process messages, store results in a database, and return the processed response. The API accepts a JSON payload, sends the data to an external endpoint, saves the results in a SQLite database, and returns the generated content.
 
